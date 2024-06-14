@@ -13,6 +13,12 @@
 
 
 def factorial(number):
+    if not isinstance(number, int):
+        raise TypeError('Number must be an integer')
+    
+    if not number >=0:
+        raise ValueError('Number must be zero or positive')
+    
     def inner_factorial(number):
         if number <= 1:
             return 1
@@ -21,4 +27,8 @@ def factorial(number):
     
     return inner_factorial(number)
 
-print(factorial(5))
+try:
+    print(factorial(-1))
+
+except Exception as ex:
+    print(ex)    
