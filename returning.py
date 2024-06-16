@@ -1,29 +1,29 @@
 
-# def usalma(number):
+def usalma(number):
     
-#     def inner(power):
-#         return number ** power
+    def inner(power):
+        return number ** power
     
-#     return inner
+    return inner
 
-# two = usalma(2)
-# three = usalma(3)
-# print(two(3))
-# print(three(4))
+two = usalma(2)
+three = usalma(3)
+print(two(3))
+print(three(4))
 
 
-# def yetki_sorgula(page):
+def yetki_sorgula(page):
     
-#     def inner(role):
-#         if role == 'Admin':
-#             return '{0} rolu {1} sayfasina ulasabilir'.format(role,page)
-#         else:
-#             return '{0} rolu {1} sayfasina ulasamaz'.format(role,page)
-#     return inner
+    def inner(role):
+        if role == 'Admin':
+            return '{0} rolu {1} sayfasina ulasabilir'.format(role,page)
+        else:
+            return '{0} rolu {1} sayfasina ulasamaz'.format(role,page)
+    return inner
 
-# user1 = yetki_sorgula('Product Edit')
-# print(user1('Admin'))
-# print(user1('User'))
+user1 = yetki_sorgula('Product Edit')
+print(user1('Admin'))
+print(user1('User'))
         
         
 
